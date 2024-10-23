@@ -6,89 +6,79 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <style>
-        .image-background {
-            background-image: url('https://u.profitroom.pl/2019-dunebeachresort-com/thumb/1920x810/uploads/BANER_M5A4989.JPG'); 
-            background-size: cover; 
-            background-position: center; 
-            height: 500px;
-            width: 100%;
-            display: flex; 
-            justify-content: center;
-            align-items: center; 
-            color: rgb(255, 255, 255); 
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        }
+    .image-background {
+        background-image: url('https://u.profitroom.pl/2019-dunebeachresort-com/thumb/1920x810/uploads/BANER_M5A4989.JPG'); 
+        background-size: cover; 
+        background-position: center; 
+        height: 500px;
+        width: 100%;
+        display: flex; 
+        justify-content: center;
+        align-items: center; 
+        color: rgb(255, 255, 255); 
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
 
-
-
-</style>
-<script>
+    .boda {
+        background-color: cadetblue;
+    }
+  </style>
+  <script>
     function showAlert() {
-         alert("Brak wolnych miejsc!");
-         alert("Zapraszamy do sekcji rezerwacja aby dostosować dzień");
-     }
-</script>
+        alert("Brak wolnych miejsc!");
+        alert("Zapraszamy do sekcji rezerwacja aby dostosować dzień");
+    }
+  </script>
 </head> 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+<body class="boda">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
         <div class="container">
-            <a class="navbar-brand" href="#">Restauracja "DJ Sigma"</a>
+            <a class="navbar-brand text-white" href="#">Restauracja DJ Sigma</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#onas">O nas</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#rezerwacja">Rezerwacja <span class="badge bg-danger">3</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#opinie">Opinie</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#onas">O nas</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#menu">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#rezerwacja">Rezerwacja <span class="badge bg-danger">3</span></a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#galeria">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#opinie">Opinie</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <div class="image-background d-flex flex-column justify-content-center align-items-center">
+
+    <div class="image-background">
         <div class="text-center">
             <h5>Restauracja</h5>
             <h1>DJ Sigma</h1>
-        <button class="btn btn-dark mt-3 me-5" onclick="showAlert()">Znajdz stolik</button>
+            <button class="btn btn-dark mt-3" onclick="showAlert()">Znajdź stolik</button>
         </div>
     </div>
-    <div class="container mt-5" id="onas"></div>
-    <div class="container mt-5">
+
+    <div class="container mt-5" id="onas">
         <h2 class="text-center mb-4">O nas</h2>
         <p class="text-center">
-            Witamy w DJ Sigma!
-
-Zapraszamy do naszej restauracji, gdzie pasja do jedzenia spotyka się z 
-unikalną atmosferą. Oferujemy wyjątkowe dania przygotowane z najwyższej 
-jakości składników, które zadowolą nawet najbardziej wymagające podniebienia. 
-Nasze menu łączy tradycję z nowoczesnymi trendami kulinarnymi, oferując zarówno klasyki, jak i innowacyjne propozycje.
+            Witamy w DJ Sigma! Zapraszamy do naszej restauracji, gdzie pasja do jedzenia spotyka się z unikalną atmosferą. Oferujemy wyjątkowe dania przygotowane z najwyższej jakości składników, które zadowolą nawet najbardziej wymagające podniebienia.
         </p>
     </div>
-    <div class="container mt-5" id="rezerwacja"></div>
-    <div class="container mt-5">
+
+    <div class="container mt-5" id="rezerwacja">
         <h2 class="text-center mb-4">Rezerwacja</h2>
-        <h3 class="text-center">
-            Na tym pasku można zobaczyć czy jest zgraja ludzi
-        </h3>
-        
-          <br>
-          <h3 class="text-center mb-4">Dzisiejszy dzień</h3>
-          <div class="progress">
-            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:110%"></div>
-          </div>
-    </div>   
+        <h3 class="text-center">Na tym pasku można zobaczyć, czy jest zgraja ludzi</h3>
+        <h3 class="text-center mb-4">Dzisiejszy dzień</h3>
+        <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 110%;"></div>
+        </div>
+    </div>
+
     <div class="container mt-5" id="menu">
-        <H5 class="text-left">Menu</H5>
-        <h2 class="text-center mb-4">Oto kilka propozycji z naszego menu</h2>
+        <h2 class="text-center mb-4">Menu</h2>
         <div class="row">
             <div class="col-md-4">
                 <div class="card h-100">
-                    <div class="img-container">
-                        <img src="https://media.istockphoto.com/id/166153966/pl/zdj%C4%99cie/w%C5%82oskiej-restauracji-przystawka.jpg?s=1024x1024&w=is&k=20&c=S5CkDgUrvcKdQ6Ic9CYci6O7Mdb_TL0VvAZSHDTLFtQ=" class="card-img-top" alt="Przystawka">
-                    </div>
+                    <img src="https://media.istockphoto.com/id/166153966/pl/zdj%C4%99cie/w%C5%82oskiej-restauracji-przystawka.jpg?s=1024x1024&w=is&k=20&c=S5CkDgUrvcKdQ6Ic9CYci6O7Mdb_TL0VvAZSHDTLFtQ=" class="card-img-top" alt="Przystawka">
                     <div class="card-body">
                         <h5 class="card-title">Przystawka</h5>
                         <ul class="list-group list-group-flush">
@@ -103,9 +93,7 @@ Nasze menu łączy tradycję z nowoczesnymi trendami kulinarnymi, oferując zar�
             </div>
             <div class="col-md-4">
                 <div class="card h-100">
-                    <div class="img-container">
-                        <img src="https://dusiowakuchnia.pl/wp-content/uploads/2018/12/IMG_8118z.jpg" class="card-img-top" alt="Danie główne">
-                    </div>
+                    <img src="https://dusiowakuchnia.pl/wp-content/uploads/2018/12/IMG_8118z.jpg" class="card-img-top" alt="Danie główne">
                     <div class="card-body">
                         <h5 class="card-title">Danie główne</h5>
                         <ul class="list-group list-group-flush">
@@ -120,9 +108,7 @@ Nasze menu łączy tradycję z nowoczesnymi trendami kulinarnymi, oferując zar�
             </div>
             <div class="col-md-4">
                 <div class="card h-100">
-                    <div class="img-container">
-                        <img src="https://warsawfoodie.pl/wp-content/uploads/2013/03/Signature-Tarta-pralinkowa.jpg" class="card-img-top" alt="Deser">
-                    </div>
+                    <img src="https://warsawfoodie.pl/wp-content/uploads/2013/03/Signature-Tarta-pralinkowa.jpg" class="card-img-top" alt="Deser">
                     <div class="card-body">
                         <h5 class="card-title">Deser</h5>
                         <ul class="list-group list-group-flush">
@@ -137,6 +123,7 @@ Nasze menu łączy tradycję z nowoczesnymi trendami kulinarnymi, oferując zar�
             </div>
         </div>
     </div>
+
     <div class="container mt-5" id="galeria">
         <h2 class="text-center mb-4">Galeria</h2>
         <div id="demo" class="carousel slide" data-bs-ride="carousel">
@@ -145,7 +132,6 @@ Nasze menu łączy tradycję z nowoczesnymi trendami kulinarnymi, oferując zar�
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
                 <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
-                
             </div>
 
             <div class="carousel-inner">
@@ -173,19 +159,37 @@ Nasze menu łączy tradycję z nowoczesnymi trendami kulinarnymi, oferując zar�
             </button>
         </div>
     </div>
-    <div class="container mt-3" id="opinie">
-    <h2 class="text-center mb-4">Opinie</h2>
-    <p class="text-center">
-        Adam R. "DJ Sigma ma potencjał, ale trzeba nad nim popracować. Sałatka z kozim serem była smaczna, jednak danie główne - makaron z krewetkami -
-    </p>
-    <p class="text-center">
-    było mało aromatyczne. Obsługa była miła, ale czas oczekiwania na jedzenie był zbyt długi.""
-</p>
-<p class="text-center">
-    Kasia P. "Nie mogę nic złego powiedzieć o DJ Sigma! Każda potrawa, którą zamówiliśmy, była wyjątkowa. Sałatka z kozim serem była świeża i pełna smaku, 
-</p>
-<p class="text-center">
-a danie główne – makaron tagliatelle z krewetkami – to prawdziwa uczta dla podniebienia. Obsługa była bardzo profesjonalna, a atmosfera kameralna i przyjemna. Z pewnością wrócimy!"
-</p>
-</div>
-    </body>
+
+    <div class="container mt-5" id="opinie">
+        <h2 class="text-center mb-4">Opinie</h2>
+        <div class="text-center">
+            <p>Adam R.: "DJ Sigma ma potencjał, ale trzeba nad nim popracować. Sałatka z kozim serem była smaczna, jednak danie główne - makaron z krewetkami - było mało aromatyczne. Obsługa była miła, ale czas oczekiwania na jedzenie był zbyt długi."</p>
+            <p>Kasia P.: "Nie mogę nic złego powiedzieć o DJ Sigma! Każda potrawa, którą zamówiliśmy, była wyjątkowa. Sałatka z kozim serem była świeża i pełna smaku, a danie główne – makaron tagliatelle z krewetkami – to prawdziwa uczta dla podniebienia. Obsługa była bardzo profesjonalna, a atmosfera kameralna i przyjemna. Z pewnością wrócimy!"</p>
+        </div>
+    </div>
+    <div class="container mt-5" id="kontakt">
+        <h2 class="text-center mb-4">Kontakt</h2>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Imię i nazwisko</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Adres email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Wiadomość</label>
+                <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Wyślij</button>
+        </form>
+    </div>
+    <footer class="bg-dark text-white text-center py-3 mt-5">
+        <p>&copy; 2024 DJ Sigma. Wszelkie prawa zastrzeżone.</p>
+        <a href="#" class="text-white me-3">Facebook</a>
+        <a href="#" class="text-white">Instagram</a>
+    </footer>
+        
+</body>
+</html>
